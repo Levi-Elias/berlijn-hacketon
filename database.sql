@@ -1,6 +1,8 @@
--- Maak de database aan als deze niet bestaat
-CREATE DATABASE IF NOT EXISTS berlijn_hackathon DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE berlijn_hackathon;
+-- ==========================================
+-- LET OP: Bij live webhosting selecteer je
+-- eerst de database in phpMyAdmin voordat 
+-- je dit script importeert.
+-- ==========================================
 
 -- ==========================================
 -- TABELLEN AANMAKEN

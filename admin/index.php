@@ -54,7 +54,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
 
     <main class="container">
         <h1>Welkom, <?= htmlspecialchars($_SESSION['admin_username']) ?>!</h1>
-        <p>Je bent succesvol ingelogd. Vanaf hier kun je (in fase 4) de bezienswaardigheden en activiteiten beheren.</p>
+        <p>nog niet gedaan lol</p>
 
         <div class="dashboard-cards">
             <div class="dash-card">

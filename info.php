@@ -48,7 +48,17 @@
                 <li><span class="material-symbols-rounded">directions_railway</span> S-Bahn: Verbindt de buitenwijken</li>
                 <li><span class="material-symbols-rounded">tram</span> Tram: Vooral in Oost-Berlijn</li>
             </ul>
-            <p style="margin-top: 12px; font-size: 0.9rem;">Tip: Koop de Berlin WelcomeCard voor onbeperkt reizen en kortingen.</p>
+            <p style="margin-top: 12px; font-size: 0.9rem;">Tip: Koop de Berlin WelcomeCard voor onbeperkt reizen en kortingen op musea.</p>
+        </div>
+
+        <!-- Handy Tips -->
+        <div class="info-section">
+            <h3><span class="material-symbols-rounded">lightbulb</span> Handige Tips</h3>
+            <ul class="info-list">
+                <li><span class="material-symbols-rounded" style="color: #f1c40f;">payments</span> <strong>Cash is king:</strong> Veel kleine winkels en bars in Berlijn accepteren nog steeds geen pinpas. Zorg dat je altijd wat contant geld op zak hebt.</li>
+                <li><span class="material-symbols-rounded" style="color: #f1c40f;">language</span> <strong>Taal:</strong> Hoewel veel mensen Engels spreken, wordt een begroeting in het Duits ("Guten Tag" of "Hallo") erg gewaardeerd.</li>
+                <li><span class="material-symbols-rounded" style="color: #f1c40f;">restaurant</span> <strong>Fooi:</strong> Een fooi van 5% tot 10% is gebruikelijk. Rond het bedrag af en geef het direct aan de bediening bij het betalen.</li>
+            </ul>
         </div>
 
     </main>

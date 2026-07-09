@@ -1,3 +1,10 @@
+<?php
+require_once 'includes/db.php';
+
+// Haal alle bezienswaardigheden op
+$stmt = $pdo->query("SELECT * FROM sights ORDER BY id DESC");
+$sights = $stmt->fetchAll();
+?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -19,44 +26,20 @@
 
     <main class="container">
         <div class="card-list">
-            <!-- Dummy Item 1 -->
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1560969184-10fe8719e047?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Brandenburger Tor" class="card-img">
-                <div class="card-content">
-                    <span class="card-category">Historie</span>
-                    <h2 class="card-title">Brandenburger Tor</h2>
-                    <p>De iconische stadspoort en het symbool van de Duitse hereniging. Een absolute must-see in Berlijn.</p>
-                    <div class="card-meta">
-                        <span><span class="material-symbols-rounded" style="font-size:18px;">map</span> Mitte</span>
+            <?php if (count($sights) > 0): ?>
+                <?php foreach ($sights as $sight): ?>
+                    <div class="card">
+                        <img src="<?= htmlspecialchars($sight['image']) ?>" alt="<?= htmlspecialchars($sight['title']) ?>" class="card-img">
+                        <div class="card-content">
+                            <span class="card-category"><?= htmlspecialchars($sight['category']) ?></span>
+                            <h2 class="card-title"><?= htmlspecialchars($sight['title']) ?></h2>
+                            <p><?= htmlspecialchars($sight['description']) ?></p>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Dummy Item 2 -->
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1574676550785-0557cc6f91cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Reichstag" class="card-img">
-                <div class="card-content">
-                    <span class="card-category">Architectuur</span>
-                    <h2 class="card-title">Reichstag</h2>
-                    <p>Het Duitse parlementsgebouw met de beroemde glazen koepel. Biedt een prachtig uitzicht over de stad.</p>
-                    <div class="card-meta">
-                        <span><span class="material-symbols-rounded" style="font-size:18px;">map</span> Tiergarten</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Dummy Item 3 -->
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1618142750398-333e3af7fbde?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Berlijnse Muur" class="card-img">
-                <div class="card-content">
-                    <span class="card-category">Monument</span>
-                    <h2 class="card-title">East Side Gallery</h2>
-                    <p>Het langste nog bestaande stuk van de Berlijnse Muur, bedekt met indrukwekkende street art.</p>
-                    <div class="card-meta">
-                        <span><span class="material-symbols-rounded" style="font-size:18px;">map</span> Friedrichshain</span>
-                    </div>
-                </div>
-            </div>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <p>Er zijn nog geen bezienswaardigheden toegevoegd.</p>
+            <?php endif; ?>
         </div>
     </main>
 

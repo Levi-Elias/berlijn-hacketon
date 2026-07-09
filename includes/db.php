@@ -4,7 +4,7 @@
 // $user = 'root';
 // $pass = 'root';
 
-$host = 'localhost'; // Docker database container hostname
+$host = 'localhost'; 
 $dbname = 'u240669_berlijnhackathon';
 $user = 'u240669_berlijnhackathon';
 $pass = 'nTS8TE2NjyjPnPK9du8s';

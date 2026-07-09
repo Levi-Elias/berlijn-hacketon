@@ -5,9 +5,9 @@
 // $pass = 'root';
 
 $host = 'localhost'; // Docker database container hostname
-$dbname = 'u240669_berlijn-hackathon';
-$user = 'u240669_berlijn-hackathon';
-$pass = 'LZYHAg8UY5s5sjBZQJ26';
+$dbname = 'u240669_berlijnhackathon';
+$user = 'u240669_berlijnhackathon';
+$pass = 'nTS8TE2NjyjPnPK9du8s';
 
 
 try {

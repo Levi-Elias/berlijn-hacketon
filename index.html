@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Jouw reisgids voor Berlijn" />
+  <title>Reisgids Berlijn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Google Fonts: DM Serif Display voor titels, DM Sans of Inter voor body -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+
+    <!-- ========== PAGE: HOME ========== -->
+    <div class="page active" id="page-home">
+      <!-- Hero -->
+      <div class="hero">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Brandenburger_Tor_abends.jpg/1280px-Brandenburger_Tor_abends.jpg"
+          alt="Brandenburger Tor Berlijn"
+          class="hero-img"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="hero-eyebrow">JOUW REISGIDS VOOR</p>
+          <h1 class="hero-title">Berlijn</h1>
+          <p class="hero-sub">Duitsland · 3.7 miljoen inwoners</p>
+        </div>
+      </div>
+
+      <!-- Intro -->
+      <div class="section intro-section">
+        <p class="intro-text">
+          Berlijn — een stad vol geschiedenis, cultuur en energie. Van het Brandenburger Tor tot de East Side Gallery, van wereldklasse musea tot levendig nachtleven. Ontdek alles wat deze fascinerende metropool te bieden heeft.
+        </p>
+
+        <div class="stats-row">
+          <div class="stat-card">
+            <svg class="stat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C41E3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span class="stat-num">6</span>
+            <span class="stat-label">Beziens-<br>waardigheden</span>
+          </div>
+          <div class="stat-card">
+            <svg class="stat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C41E3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <span class="stat-num">6</span>
+            <span class="stat-label">Activiteiten<br>&amp; Tips</span>
+          </div>
+          <div class="stat-card">
+            <svg class="stat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C41E3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span class="stat-num">48h</span>
+            <span class="stat-label">Ideale<br>verblijfsduur</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Verken Berlijn -->
+      <div class="section">
+        <h2 class="section-title">Verken Berlijn</h2>
+
+        <button class="nav-card" data-target="plaatsen">
+          <div class="nav-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C41E3A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="nav-card-text">
+            <span class="nav-card-title">Bezienswaardigheden</span>
+            <span class="nav-card-sub">6 must-see locaties</span>
+          </div>
+          <svg class="nav-card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+        <button class="nav-card" data-target="activiteiten">
+          <div class="nav-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C41E3A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <div class="nav-card-text">
+            <span class="nav-card-title">Activiteiten &amp; Tips</span>
+            <span class="nav-card-sub">6 ervaringen om te doen</span>
+          </div>
+          <svg class="nav-card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+        <button class="nav-card" data-target="praktisch">
+          <div class="nav-card-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C41E3A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <div class="nav-card-text">
+            <span class="nav-card-title">Praktische Info</span>
+            <span class="nav-card-sub">Transport, noodgevallen &amp; tips</span>
+          </div>
+          <svg class="nav-card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+      <!-- Beste Reistijd banner -->
+      <div class="section banner-section">
+        <div class="banner-card">
+          <p class="banner-eyebrow">BESTE REISTIJD</p>
+          <h3 class="banner-title">Mei t/m September</h3>
+          <p class="banner-body">De zomermaanden zijn ideaal met aangename temperaturen (18–28°C), lange daglichturen en de meeste evenementen en festivals.</p>
+        </div>
+      </div>
+
+      <div class="page-bottom-spacer"></div>
+    </div>
+
+    <!-- ========== PAGE: PLAATSEN ========== -->
+    <div class="page" id="page-plaatsen">
+      <div class="page-header">
+        <h2 class="page-title">Bezienswaardigheden</h2>
+        <p class="page-subtitle">6 must-see locaties in Berlijn</p>
+      </div>
+      
+      <div class="content-container">
+        <!-- Card: Brandenburger Tor -->
+        <div class="place-card">
+          <div class="place-img-wrap">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Brandenburger_Tor_abends.jpg/1280px-Brandenburger_Tor_abends.jpg" alt="Brandenburger Tor" class="place-img" />
+            <span class="badge badge-red">Historisch Monument</span>
+            <span class="badge badge-white">Gratis</span>
+          </div>
+          <div class="place-info">
+            <h3 class="place-name">Brandenburger Tor</h3>
+            <p class="place-desc">Het iconische neoklassieke triomfpoort uit 1791 is het symbool van Berlijn en de Duitse eenwording.…</p>
+            <div class="place-meta">
+              <div class="meta-left">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>Altijd open (buiten)</span>
+              </div>
+              <svg class="meta-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C41E3A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card: Reichstag -->
+        <div class="place-card">
+          <div class="place-img-wrap">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Reichstag_building_Berlin_view_from_west_before_sunset.jpg/1280px-Reichstag_building_Berlin_view_from_west_before_sunset.jpg" alt="Reichstag" class="place-img" />
+            <span class="badge badge-red">Politiek Gebouw</span>
+            <span class="badge badge-white">Gratis (reservering vereist)</span>
+          </div>
+          <div class="place-info">
+            <h3 class="place-name">Reichstag</h3>
+            <p class="place-desc">Het zetel van de Duitse Bondsdag met zijn indrukwekkende glazen koepel van architect…</p>
+            <div class="place-meta">
+              <div class="meta-left">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>08:00–24:00 (koepel)</span>
+              </div>
+              <svg class="meta-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C41E3A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card: East Side Gallery -->
+        <div class="place-card">
+          <div class="place-img-wrap">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/East_Side_Gallery_Berlin_2012.jpg/1280px-East_Side_Gallery_Berlin_2012.jpg" alt="East Side Gallery" class="place-img" />
+            <span class="badge badge-red">Kunst &amp; Geschiedenis</span>
+            <span class="badge badge-white">Gratis</span>
+          </div>
+          <div class="place-info">
+            <h3 class="place-name">East Side Gallery</h3>
+            <p class="place-desc">Het langste overblijfsel van de Berlijnse Muur (1,3 km) is omgetoverd tot een internationaal…</p>
+            <div class="place-meta">
+              <div class="meta-left">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>Altijd open (buiten)</span>
+              </div>
+              <svg class="meta-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C41E3A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-bottom-spacer"></div>
+    </div>
+
+    <!-- ========== PAGE: ACTIVITEITEN ========== -->
+    <div class="page" id="page-activiteiten">
+      <div class="page-header">
+        <h2 class="page-title">Activiteiten &amp; Tips</h2>
+        <p class="page-subtitle">De beste ervaringen die Berlijn te bieden heeft</p>
+      </div>
+
+      <div class="content-container">
+        <!-- Activiteit 1 -->
+        <div class="activity-card">
+          <div class="activity-header">
+            <div class="activity-icon">🍜</div>
+            <div class="activity-title-wrap">
+              <h3 class="activity-name">Currywurst proeven</h3>
+              <span class="activity-badge">Culinair</span>
+            </div>
+          </div>
+          <p class="activity-desc">De ultieme Berlijnse streetfood-ervaring. Curry 36 in Mehringdamm en Konnopke's Imbiß zijn legendarisch. Currywurst is een gesneden worst met tomatensaus en kerriepoeder — simpel maar onvergetelijk.</p>
+          <div class="activity-meta">
+            <div class="activity-meta-row">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C41E3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Mehringdamm 36, Kreuzberg</span>
+            </div>
+            <div class="activity-meta-row">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C41E3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              <span>€2–4 per portie</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activiteit 2 -->
+        <div class="activity-card">
+          <div class="activity-header">
+            <div class="activity-icon">🚲</div>
+            <div class="activity-title-wrap">
+              <h3 class="activity-name">Fietsen door Tiergarten</h3>
+              <span class="activity-badge">Buiten</span>
+            </div>
+          </div>
+          <p class="activity-desc">Het centrale stadspark van Berlijn (210 hectare) is ideaal om per fiets te verkennen. Rijd langs de Siegessäule (Overwinningskolom) en geniet van de natuur midden in de stad.</p>
+          <div class="activity-meta">
+            <div class="activity-meta-row">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C41E3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Tiergarten, Berlijn-Mitte</span>
+            </div>
+            <div class="activity-meta-row">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C41E3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              <span>Fiets huren: ±€12/dag</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-bottom-spacer"></div>
+    </div>
+
+    <!-- ========== PAGE: PRAKTISCH ========== -->
+    <div class="page" id="page-praktisch">
+      <div class="page-header">
+        <h2 class="page-title">Praktische Info</h2>
+        <p class="page-subtitle">Alles wat je moet weten voor je reis</p>
+      </div>
+
+      <div class="content-container">
+        <!-- Vervoer -->
+        <div class="praktisch-section-header">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C41E3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 4v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          <h3 class="section-title-small">Vervoer</h3>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">🚇</div>
+          <div class="info-card-text">
+            <strong>U-Bahn &amp; S-Bahn</strong>
+            <p>Het uitgebreide metronetwerk rijdt dagelijks van 4:00–1:00 (weekend 24/7). Koop een dagpas voor €9,20 (AB-zone).</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">🚌</div>
+          <div class="info-card-text">
+            <strong>Bus &amp; Tram</strong>
+            <p>Bussen en trams dekken alle hoeken van de stad. Lijn 100 en 200 rijden langs de meeste toeristische attracties.</p>
+          </div>
+        </div>
+
+        <!-- Noodgevallen -->
+        <div class="praktisch-section-header" style="margin-top: 32px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C41E3A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <h3 class="section-title-small">Noodgevallen</h3>
+        </div>
+
+        <div class="emergency-card">
+          <div class="emergency-row">
+            <span class="emergency-name">Politie</span>
+            <span class="emergency-num">110</span>
+          </div>
+          <div class="emergency-row">
+            <span class="emergency-name">Brandweer / Ambulance</span>
+            <span class="emergency-num">112</span>
+          </div>
+          <div class="emergency-row">
+            <span class="emergency-name">Niet-spoedeisende politie</span>
+            <span class="emergency-num long">030 4664 4664</span>
+          </div>
+          <div class="emergency-row">
+            <span class="emergency-name">Gifcentrum</span>
+            <span class="emergency-num long">030 19240</span>
+          </div>
+        </div>
+      </div>
+      <div class="page-bottom-spacer"></div>
+    </div>
+
+    <!-- ========== BOTTOM NAV ========== -->
+    <nav class="bottom-nav" id="bottom-nav">
+      <button class="nav-btn active" data-page="home" id="nav-home">
+        <div class="nav-btn-inner">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>Home</span>
+        </div>
+        <div class="nav-dot"></div>
+      </button>
+      <button class="nav-btn" data-page="plaatsen" id="nav-plaatsen">
+        <div class="nav-btn-inner">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Plaatsen</span>
+        </div>
+        <div class="nav-dot"></div>
+      </button>
+      <button class="nav-btn" data-page="activiteiten" id="nav-activiteiten">
+        <div class="nav-btn-inner">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <span>Activiteiten</span>
+        </div>
+        <div class="nav-dot"></div>
+      </button>
+      <button class="nav-btn" data-page="praktisch" id="nav-praktisch">
+        <div class="nav-btn-inner">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <span>Praktisch</span>
+        </div>
+        <div class="nav-dot"></div>
+      </button>
+    </nav>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

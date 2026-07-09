@@ -1,8 +1,14 @@
 <?php
-$host = 'mysql_db'; // Docker database container hostname
-$dbname = 'berlijn_hackathon';
-$user = 'root';
-$pass = 'root';
+// $host = 'mysql_db'; // Docker database container hostname
+// $dbname = 'berlijn_hackathon';
+// $user = 'root';
+// $pass = 'root';
+
+$host = 'localhost'; // Docker database container hostname
+$dbname = 'u240669_berlijn-hackathon';
+$user = 'u240669_berlijn-hackathon';
+$pass = 'LZYHAg8UY5s5sjBZQJ26';
+
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);
